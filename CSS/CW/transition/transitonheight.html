@@ -5,49 +5,29 @@
     <style>
         div {
             margin: 20px;
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             background: rgb(90, 9, 90);
-            transition: width 2s, height 2s, background-color 2s;
+            transition: width 2s, height 2s, background-color 2s , transform 2s;
+            
             
         }
 
         
-        #div1 {
-            transition-timing-function: linear;
-        }
-
-        #div2 {
-            transition-timing-function: ease;
-        }
-
-        #div3 {
-            transition-timing-function: ease-in;
-        }
-
-        #div4 {
-            transition-timing-function: ease-out;
-        }
-
-        #div5 {
-            transition-timing-function: ease-in-out;
-        }
+        
 
         div:hover {
             width: 400px;
+            height: 400px;
             background-color: rgb(31, 9, 75);
-            
+            transform: rotate(90deg);
         }
     </style>
 </head>
 
 <body>
 
-<div id="div1"></div>
-<div id="div2"></div>
-<div id="div3"></div>
-<div id="div4"></div>
-<div id="div5"></div>
+<div></div>
 
 </body>
 
