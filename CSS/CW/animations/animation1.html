@@ -3,19 +3,55 @@
 <head>
 <style>
 div {
+    width: 100vw;
+    height: 100vh;
+    
   width: 100px;
   height: 100px;
   background-color: red;
-  animation-name: myAnimation;
-  animation-duration: 4s;
+  animation-name: myAnimation, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-duration: 0.2s, 0.2s;
+}
+.div2 {
+    display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: myAnimation, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-duration: 0.5s, 0.5s;
+  
+}
+.div3 {
+    display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: myAnimation, bounce;
+  animation-iteration-count: infinite, infinite;    
+    animation-duration: 1s, 1s;
 }
 
 @keyframes myAnimation {
+    /*adddin rainbow color to the divs*/
   0%   {background-color: red;}
   10%  {background-color: yellow;}
   20%  {background-color: blue;}
   30% {background-color: green;}
+    40% {background-color: orange;}
+    50% {background-color: purple;}
+    60% {background-color: pink;}
+    70% {background-color: brown;}
+    80% {background-color: gray;}
+    90% {background-color: black;}
   100% {background-color: lightgreen;}
+
+}
+@keyframes bounce {
+  0%   {transform: translateY(0);}
+  50%  {transform: translateY(-100px);}
+  100% {transform: translateY(0);}
 }
 </style>
 </head>
@@ -24,7 +60,8 @@ div {
 <h1>CSS Animation</h1>
 
 <div></div>
-
+<div class="div2"></div>
+<div class="div3"></div>
 <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
 
 </body>
