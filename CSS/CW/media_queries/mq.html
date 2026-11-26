@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+.container {
+  display: grid;
+border: 10px solid rgb(112, 31, 31);
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  place-items: center;
+  height:100vh;
+
+}
+
+.card{
+ background-color: #f1f1f1;
+border : 10px solid red;
+
+  height:200px;
+  width:200px;
+ background-color: bisque;
+
+
+}
+@media(width<=600px)
+{
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+}
+@media(max-width:768px) and (min-width:601px)
+{
+.container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+
+  place-items: center;
+  height:100vh;
+
+}
+
+
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+</style>
+
+
+<body>
+    <h1 align="center">media query</h1>
+
+<div class="container">
+
+  <div class="card"><img src="assets/me1.jpeg"></div>
+  <div class="card"><img src="assets/me2.jpeg"></div>
+  <div class="card"><img src="assets/me3.jpeg"></div>  
+    <div class="card"><img src=" assets/me7.jpeg"></div>
+  <div class="card"><img src="assets/me8.jpeg"></div>
+  <div class="card"><img src="assets/me9.jpeg"></div>
+  <div class="card"><img src="assets/me4.jpeg"></div>
+  <div class="card"><img src="assets/me5.jpeg"></div>
+  <div class="card"><img src="assets/me6.jpeg"></div>
+
+  
+</div>
+
+</body>
+</html>
